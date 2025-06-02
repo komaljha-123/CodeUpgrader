@@ -1,0 +1,359 @@
+/* UpgradeCodebase.css */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    background-color: white;
+    width: 213%;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navbar-logo {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .navbar-title {
+    font-size: 1.1em;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .navbar-button {
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  
+  .navbar-button:hover {
+    background-color: rgba(255,255,255,0.1);
+  }
+  
+  .navbar-user {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  .upgrade-codebase-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+    flex-grow: 1;
+    padding-left: 158px;
+    margin-right: 44px;
+  }
+  
+  h2 {
+    color: #444;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .divider {
+    height: 1px;
+    background-color: #eee;
+    margin: 20px 0;
+  }
+  
+  .upload-area {
+    border: 2px dashed #ccc;
+    padding: 30px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .upload-area:hover {
+    border-color: #999;
+  }
+  
+  .upload-status {
+    margin-top: 10px;
+  }
+  
+  .upload-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .upload-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .progress-steps {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+  }
+  
+  .step {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 3px solid #ddd;
+  }
+  
+  .step.active {
+    border-bottom-color: #0D80F2;
+  }
+  
+  .step h3 {
+    margin: 0;
+    font-size: 1em;
+    color: #666;
+  }
+  
+  .step p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #888;
+  }
+  
+  .primary-button {
+    background-color: #0D80F2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px;
+  }
+  
+  .primary-button:hover {
+    background-color: #45a049;
+  }
+  
+  .secondary-button {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .secondary-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .modified-files {
+    margin-top: 30px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f5f5f5;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .action-button {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .action-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .action-button.selected {
+    background-color: #0D80F2;
+    color: white;
+    border-color: #45a049;
+  }
+  
+  .actions-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+
+
+  /* UpgradeCodebase.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+
+
+
+
+.section {
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.divider {
+  height: 1px;
+  background-color: #eee;
+  margin: 20px 0;
+}
+
+.upload-area {
+  border: 2px dashed #ccc;
+  padding: 30px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.upload-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.progress-container {
+  margin: 30px 0;
+}
+
+.progress-step {
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  height: 6px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #0D80F2;
+  transition: width 0.3s ease;
+}
+
+.primary-button {
+  background-color: #0D80F2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modified-files {
+  margin-top: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.actions {
+  display: flex;
+  gap: 5px;
+}
+
+.action-button {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.action-button.selected {
+  background-color: #0D80F2;
+  color: white;
+}
+
+.pro{
+  color: gray;
+  font-size: 12px;  
+  margin-left: 10px;
+
+}
