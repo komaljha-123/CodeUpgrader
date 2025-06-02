@@ -254,7 +254,7 @@ const UpgradeCodebase = () => {
                     <h2>Modified Files</h2>
                     <table>
                         <thead>
-                            <tr>
+                            <tr className=''>
                                 <th>File Name</th>
                                 <th>Status</th>
                                 <th>Actions</th>
@@ -264,7 +264,7 @@ const UpgradeCodebase = () => {
                             {files.map((file) => (
                                 <tr key={file.name}>
                                     <td>{file.name}</td>
-                                    <td>{file.status}</td>
+                                    <td  className={`status-pill ${file.status.toLowerCase()}`}>{file.status}</td>
                                     <td className="actions">
                                         <button
                                             className={`action-button ${file.action === 'merge' ? 'selected' : ''}`}
@@ -272,12 +272,14 @@ const UpgradeCodebase = () => {
                                         >
                                             Merge
                                         </button>
+                                        <div className='mer'>|</div>
                                         <button
                                             className={`action-button ${file.action === 'reject' ? 'selected' : ''}`}
                                             onClick={() => handleFileAction(file.name, 'reject')}
                                         >
                                             Reject
                                         </button>
+                                        <div className='mer'>|</div>
                                         <button
                                             className={`action-button ${file.action === 'accept' ? 'selected' : ''}`}
                                             onClick={() => handleFileAction(file.name, 'accept')}

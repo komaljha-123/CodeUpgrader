@@ -186,6 +186,7 @@
   
   .modified-files {
     margin-top: 30px;
+    width: 160%;
   }
   
   table {
@@ -198,6 +199,7 @@
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+    padding-left: 55px;
   }
   
   th {
@@ -206,7 +208,8 @@
   
   .actions {
     display: flex;
-    gap: 5px;
+    gap: 0px;
+    color: black;
   }
   
   .action-button {
@@ -231,6 +234,7 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
+
   }
 
 
@@ -301,6 +305,7 @@ input[type="text"] {
   border-radius: 3px;
   margin-top: 10px;
   overflow: hidden;
+  width: 162%;
 }
 
 .progress-fill {
@@ -325,6 +330,8 @@ input[type="text"] {
 table {
   width: 100%;
   border-collapse: collapse;
+  border-bottom: 1px solid #ddd;
+
 }
 
 th, td {
@@ -335,12 +342,14 @@ th, td {
 
 .actions {
   display: flex;
+  font-size: 12px;
   gap: 5px;
+  color: black;
 }
 
 .action-button {
   padding: 5px 10px;
-  border: 1px solid #ddd;
+  border: 0px solid #ddd;
   background-color: #f9f9f9;
   border-radius: 3px;
   cursor: pointer;
@@ -357,3 +366,20 @@ th, td {
   margin-left: 10px;
 
 }
+
+.mer{
+    font-size: small;
+}
+
+/* .status-pill {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 1px solid;
+  } */
+  
+
+  
