@@ -239,7 +239,7 @@ const UpgradeCodebase = () => {
 
                     <div className="progress-step">
 
-                        <h3>{step === 4 ? 'Compiling...' : step > 4 ? 'Compiled' : 'Pending'}</h3>
+                        <h3>{step === 4 ? 'Completed' : step > 4 ? 'completed' : 'Pending'}</h3>
                         <div className="progress-bar">
                             <div
                                 className="progress-fill"
